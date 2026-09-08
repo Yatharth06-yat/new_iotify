@@ -209,7 +209,7 @@ export default function ContactPage() {
           <div className="flex flex-col gap-4">
             {contactInfo.map((info, i) => {
               const Icon = info.icon;
-              const cardInner = (
+              const content = (
                 <>
                   <div
                     className="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-xl"
@@ -251,7 +251,7 @@ export default function ContactPage() {
                         boxShadow: "0 1px 4px rgba(17,24,39,0.04)",
                       }}
                     >
-                      {cardInner}
+                      {content}
                     </a>
                   ) : (
                     <div
@@ -262,7 +262,7 @@ export default function ContactPage() {
                         boxShadow: "0 1px 4px rgba(17,24,39,0.04)",
                       }}
                     >
-                      {cardInner}
+                      {content}
                     </div>
                   )}
                 </motion.div>
