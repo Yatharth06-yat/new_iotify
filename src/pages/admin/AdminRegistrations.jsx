@@ -232,7 +232,7 @@ export default function AdminRegistrations() {
         {canWrite && counts.Pending > 0 && (
           <button
             onClick={bulkApprovePending}
-            className="px-4 py-2 rounded-xl text-sm font-medium bg-green-500/10 text-green-400 border border-green-500/20 hover:bg-green-500/20 transition-colors"
+            className="px-4 py-2 rounded-xl text-sm font-medium bg-blue-700/10 text-blue-700 border border-blue-700/20 hover:bg-blue-700/20 transition-colors"
           >
             Approve all in view
           </button>
@@ -428,7 +428,7 @@ export default function AdminRegistrations() {
                             <button
                               onClick={() => updateStatus(reg, "Approved")}
                               disabled={updatingId === reg.id || reg.status === "Approved"}
-                              className="p-2 hover:bg-green-500/10 rounded-lg a-muted hover:text-green-400 transition-colors disabled:opacity-30"
+                              className="p-2 hover:bg-blue-700/10 rounded-lg a-muted hover:text-blue-700 transition-colors disabled:opacity-30"
                               title="Approve"
                             >
                               <CheckCircle2 size={16} />
@@ -568,7 +568,7 @@ export default function AdminRegistrations() {
                   <button
                     onClick={() => updateStatus(selectedReg, "Approved")}
                     disabled={updatingId === selectedReg.id}
-                    className="px-4 py-2 bg-green-500/10 text-green-400 hover:bg-green-500/20 rounded-xl text-sm font-medium transition-colors disabled:opacity-50"
+                    className="px-4 py-2 bg-blue-700/10 text-blue-700 hover:bg-blue-700/20 rounded-xl text-sm font-medium transition-colors disabled:opacity-50"
                   >
                     Approve
                   </button>

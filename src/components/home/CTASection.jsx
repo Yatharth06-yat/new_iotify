@@ -10,7 +10,7 @@ export default function CTASection({ onNavigate }) {
       {/* Soft Radial Glow Behind Heading */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[radial-gradient(circle,_rgba(15,118,110,0.05)_0%,_rgba(15,118,110,0.02)_40%,_transparent_70%)] blur-[100px]"
+        className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[radial-gradient(circle,_rgba(30,58,138,0.05)_0%,_rgba(30,58,138,0.02)_40%,_transparent_70%)] blur-[100px]"
       />
 
       <div className="mx-auto max-w-4xl relative z-10">

@@ -16,9 +16,9 @@ export default {
           dark: "#111827",
         },
         accent: {
-          DEFAULT: "#0F766E",
-          light: "#14B8A6",
-          dark: "#0D6860",
+          DEFAULT: "#1e3a8a",
+          light: "#3b82f6",
+          dark: "#1e40af",
         },
         muted: "#6B7280",
         "text-primary": "#111827",

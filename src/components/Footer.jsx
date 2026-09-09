@@ -49,7 +49,7 @@ export default function Footer({ onNavigate }) {
       {/* Top accent line */}
       <div
         className="absolute top-0 left-0 right-0 h-[3px]"
-        style={{ background: "linear-gradient(90deg, #0F766E, #0369A1, #0F766E)" }}
+        style={{ background: "linear-gradient(90deg, #1e3a8a, #0369A1, #1e3a8a)" }}
         aria-hidden="true"
       />
 
@@ -57,7 +57,7 @@ export default function Footer({ onNavigate }) {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(circle, rgba(15,118,110,0.07) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(circle, rgba(30,58,138,0.07) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.5,
         }}
@@ -131,7 +131,7 @@ export default function Footer({ onNavigate }) {
                     border: "1px solid rgba(17,24,39,0.10)",
                     color: "#6B7280",
                   }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = "#0F766E"; e.currentTarget.style.borderColor = "rgba(15,118,110,0.30)"; e.currentTarget.style.background = "rgba(15,118,110,0.06)"; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "#1e3a8a"; e.currentTarget.style.borderColor = "rgba(30,58,138,0.30)"; e.currentTarget.style.background = "rgba(30,58,138,0.06)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.color = "#6B7280"; e.currentTarget.style.borderColor = "rgba(17,24,39,0.10)"; e.currentTarget.style.background = "rgba(255,255,255,0.6)"; }}
                 >
                   <Icon size={13} />
@@ -206,7 +206,7 @@ export default function Footer({ onNavigate }) {
           <span>© {new Date().getFullYear()} IoTify Lab, MITS. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" aria-hidden="true" />
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500" aria-hidden="true" />
               All systems operational
             </span>
             <a href="#" className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded">Privacy</a>

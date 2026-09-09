@@ -126,9 +126,9 @@ const MODULES_DATA = [
     subtitle: "Classes 6th – 12th",
     icon: GraduationCap,
     badge: "Most Popular",
-    color: "from-teal-600 to-emerald-600",
-    bgColor: "bg-teal-50/50",
-    borderColor: "border-teal-200",
+    color: "from-blue-700 to-blue-900",
+    bgColor: "bg-blue-800/50",
+    borderColor: "border-blue-800",
     target: "School Students (Classes 6th to 12th)",
     duration: "Flexible (1 – 3 Days)",
     venue: "School Premises OR MITS Labs",
@@ -326,7 +326,7 @@ const MITS_CAMPUS_STEPS = [
 ];
 
 // Unified Teal brand color theme for all chevrons
-const UNIFIED_ACCENT = "#0F766E";
+const UNIFIED_ACCENT = "#1e3a8a";
 
 // Snake Winding Roadmap Component
 function SnakeRoadmapTimeline({ steps }) {
@@ -798,14 +798,14 @@ export default function BookPage({ onNavigate }) {
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse" role="table" aria-label="Program modules details">
                   <thead>
-                    <tr style={{ borderBottom: "2px solid rgba(15,118,110,0.2)", background: "#FFFAF5" }}>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] w-16 text-center">Module</th>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[140px]">Program</th>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[180px]">Modules / Offerings</th>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[280px]">Hands-on Activities / Key Offerings</th>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[140px]">Proposed Duration</th>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[110px]">Last Date to Apply</th>
-                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[140px] text-center">Details / Action</th>
+                    <tr style={{ borderBottom: "2px solid rgba(30,58,138,0.2)", background: "#FFFAF5" }}>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] w-16 text-center">Module</th>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[140px]">Program</th>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[180px]">Modules / Offerings</th>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[280px]">Hands-on Activities / Key Offerings</th>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[140px]">Proposed Duration</th>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[110px]">Last Date to Apply</th>
+                      <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[140px] text-center">Details / Action</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 text-xs sm:text-sm">
@@ -823,7 +823,7 @@ export default function BookPage({ onNavigate }) {
                               rowSpan={3}
                               className="py-5 px-4 font-extrabold text-base text-center align-top border-r border-gray-200 bg-[#FFFAF5]/60"
                             >
-                              <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#0F766E] text-white font-mono font-bold text-sm shadow-md">
+                              <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#1e3a8a] text-white font-mono font-bold text-sm shadow-md">
                                 M1
                               </span>
                             </td>
@@ -831,7 +831,7 @@ export default function BookPage({ onNavigate }) {
                               rowSpan={3}
                               className="py-5 px-5 font-bold text-gray-900 align-top border-r border-gray-200 bg-[#FFFAF5]/40"
                             >
-                              <div className="text-sm font-bold text-[#0F766E]">{detailedModules[0].program}</div>
+                              <div className="text-sm font-bold text-[#1e3a8a]">{detailedModules[0].program}</div>
                               <div className="text-xs text-gray-500 font-medium mt-1">{detailedModules[0].targetClass}</div>
                               <div className="text-[11px] text-gray-400 mt-2 font-mono">{detailedModules[0].note}</div>
                             </td>
@@ -840,7 +840,7 @@ export default function BookPage({ onNavigate }) {
 
                         <td className="py-4 px-5 font-semibold text-gray-900 align-top border-r border-gray-200/80">
                           <div className="flex items-start gap-1.5">
-                            <Zap className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                            <Zap className="w-4 h-4 text-[#1e3a8a] shrink-0 mt-0.5" />
                             <span>{track.name}</span>
                           </div>
                         </td>
@@ -850,7 +850,7 @@ export default function BookPage({ onNavigate }) {
                             {track.activities.map((act, aIdx) => (
                               <span
                                 key={aIdx}
-                                className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-emerald-50 text-[#0F766E] border border-emerald-100"
+                                className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-blue-50 text-[#1e3a8a] border border-blue-200"
                               >
                                 • {act}
                               </span>
@@ -858,7 +858,7 @@ export default function BookPage({ onNavigate }) {
                           </div>
                         </td>
 
-                        <td className="py-4 px-5 font-medium text-[#0F766E] align-top border-r border-gray-200/80 whitespace-nowrap">
+                        <td className="py-4 px-5 font-medium text-[#1e3a8a] align-top border-r border-gray-200/80 whitespace-nowrap">
                           <div className="flex items-center gap-1.5">
                             <Clock className="w-3.5 h-3.5 shrink-0" />
                             <span>{track.duration}</span>
@@ -878,7 +878,7 @@ export default function BookPage({ onNavigate }) {
                               href={M1_FORM_URL}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                              className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                             >
                               <Download className="w-3.5 h-3.5" />
                               <span>M1 Form</span>
@@ -889,7 +889,7 @@ export default function BookPage({ onNavigate }) {
                                 const cta = document.getElementById("google-form-cta-section");
                                 if (cta) cta.scrollIntoView({ behavior: "smooth" });
                               }}
-                              className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0F766E] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all"
+                              className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all"
                             >
                               <span>Book M1</span>
                               <ChevronRight className="w-3.5 h-3.5" />
@@ -902,12 +902,12 @@ export default function BookPage({ onNavigate }) {
                     {/* ── M2 ROW ── */}
                     <tr className="hover:bg-[#FFFAF5] transition-colors border-b border-gray-100" id="module-m2">
                       <td className="py-5 px-4 font-extrabold text-base text-center align-top border-r border-gray-200 bg-[#FFFAF5]/60">
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#0F766E] text-white font-mono font-bold text-sm shadow-md">
+                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#1e3a8a] text-white font-mono font-bold text-sm shadow-md">
                           M2
                         </span>
                       </td>
                       <td className="py-5 px-5 font-bold text-gray-900 align-top border-r border-gray-200 bg-[#FFFAF5]/40">
-                        <div className="text-sm font-bold text-[#0F766E]">{detailedModules[1].program}</div>
+                        <div className="text-sm font-bold text-[#1e3a8a]">{detailedModules[1].program}</div>
                         <div className="text-xs text-gray-500 font-medium mt-1 leading-relaxed">{detailedModules[1].targetClass}</div>
                       </td>
                       <td className="py-4 px-5 font-semibold text-gray-900 align-top border-r border-gray-200/80">
@@ -917,13 +917,13 @@ export default function BookPage({ onNavigate }) {
                         <ul className="space-y-1">
                           {detailedModules[1].activities.map((act, aIdx) => (
                             <li key={aIdx} className="flex items-start gap-1.5 text-xs text-gray-700">
-                              <span className="text-[#0F766E] font-bold">•</span>
+                              <span className="text-[#1e3a8a] font-bold">•</span>
                               <span>{act}</span>
                             </li>
                           ))}
                         </ul>
                       </td>
-                      <td className="py-4 px-5 font-medium text-[#0F766E] align-top border-r border-gray-200/80">
+                      <td className="py-4 px-5 font-medium text-[#1e3a8a] align-top border-r border-gray-200/80">
                         <div className="flex items-start gap-1.5">
                           <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5" />
                           <span>{detailedModules[1].duration}</span>
@@ -938,7 +938,7 @@ export default function BookPage({ onNavigate }) {
                             href={M2_FORM_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                            className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                           >
                             <Download className="w-3.5 h-3.5" />
                             <span>M2 Form</span>
@@ -949,7 +949,7 @@ export default function BookPage({ onNavigate }) {
                               const cta = document.getElementById("google-form-cta-section");
                               if (cta) cta.scrollIntoView({ behavior: "smooth" });
                             }}
-                            className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0F766E] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all"
+                            className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all"
                           >
                             <span>Book M2</span>
                             <ChevronRight className="w-3.5 h-3.5" />
@@ -961,12 +961,12 @@ export default function BookPage({ onNavigate }) {
                     {/* ── M3 ROW ── */}
                     <tr className="hover:bg-[#FFFAF5] transition-colors border-b border-gray-100" id="module-m3">
                       <td className="py-5 px-4 font-extrabold text-base text-center align-top border-r border-gray-200 bg-[#FFFAF5]/60">
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#0F766E] text-white font-mono font-bold text-sm shadow-md">
+                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#1e3a8a] text-white font-mono font-bold text-sm shadow-md">
                           M3
                         </span>
                       </td>
                       <td className="py-5 px-5 font-bold text-gray-900 align-top border-r border-gray-200 bg-[#FFFAF5]/40">
-                        <div className="text-sm font-bold text-[#0F766E]">{detailedModules[2].program}</div>
+                        <div className="text-sm font-bold text-[#1e3a8a]">{detailedModules[2].program}</div>
                         <div className="text-xs text-gray-500 font-medium mt-1">{detailedModules[2].targetClass}</div>
                       </td>
                       <td className="py-4 px-5 font-semibold text-gray-900 align-top border-r border-gray-200/80">
@@ -975,7 +975,7 @@ export default function BookPage({ onNavigate }) {
                       <td className="py-4 px-5 text-gray-700 align-top border-r border-gray-200/80 leading-relaxed text-xs">
                         {detailedModules[2].description}
                       </td>
-                      <td className="py-4 px-5 font-medium text-[#0F766E] align-top border-r border-gray-200/80">
+                      <td className="py-4 px-5 font-medium text-[#1e3a8a] align-top border-r border-gray-200/80">
                         <div className="flex items-start gap-1.5">
                           <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5" />
                           <span>{detailedModules[2].duration}</span>
@@ -990,7 +990,7 @@ export default function BookPage({ onNavigate }) {
                             href={M3_FORM_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                            className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                           >
                             <Download className="w-3.5 h-3.5" />
                             <span>M3 Form</span>
@@ -1001,7 +1001,7 @@ export default function BookPage({ onNavigate }) {
                               const cta = document.getElementById("google-form-cta-section");
                               if (cta) cta.scrollIntoView({ behavior: "smooth" });
                             }}
-                            className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0F766E] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all"
+                            className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all"
                           >
                             <span>Book M3</span>
                             <ChevronRight className="w-3.5 h-3.5" />
@@ -1110,7 +1110,7 @@ export default function BookPage({ onNavigate }) {
                 </p>
 
                 <div className="flex flex-wrap gap-2 text-xs font-semibold text-gray-700 pt-1">
-                  <span className="px-3 py-1 rounded-lg bg-gray-100 border border-gray-200 font-bold text-[#0F766E]">
+                  <span className="px-3 py-1 rounded-lg bg-gray-100 border border-gray-200 font-bold text-[#1e3a8a]">
                     M1: Student Workshops (Class 6th-12th)
                   </span>
                   <span className="px-3 py-1 rounded-lg bg-gray-100 border border-gray-200">
@@ -1131,39 +1131,39 @@ export default function BookPage({ onNavigate }) {
                       href={M1_FORM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 rounded-xl bg-white border-2 border-[#0F766E] text-[#0F766E] hover:bg-[#0F766E] hover:text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-between group"
+                      className="w-full py-2.5 px-4 rounded-xl bg-white border-2 border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-between group"
                     >
                       <span className="flex items-center gap-2">
                         <Download className="w-4 h-4 shrink-0 transition-transform group-hover:-translate-y-0.5" />
                         <span>Download M1 Form (Student Workshop)</span>
                       </span>
-                      <span className="text-[10px] bg-emerald-50 text-[#0F766E] group-hover:bg-white/20 group-hover:text-white px-2 py-0.5 rounded font-bold">PDF</span>
+                      <span className="text-[10px] bg-blue-50 text-[#1e3a8a] group-hover:bg-white/20 group-hover:text-white px-2 py-0.5 rounded font-bold">PDF</span>
                     </a>
 
                     <a
                       href={M2_FORM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 rounded-xl bg-white border-2 border-[#0F766E] text-[#0F766E] hover:bg-[#0F766E] hover:text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-between group"
+                      className="w-full py-2.5 px-4 rounded-xl bg-white border-2 border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-between group"
                     >
                       <span className="flex items-center gap-2">
                         <Download className="w-4 h-4 shrink-0 transition-transform group-hover:-translate-y-0.5" />
                         <span>Download M2 Form (Train-the-Teacher)</span>
                       </span>
-                      <span className="text-[10px] bg-emerald-50 text-[#0F766E] group-hover:bg-white/20 group-hover:text-white px-2 py-0.5 rounded font-bold">PDF</span>
+                      <span className="text-[10px] bg-blue-50 text-[#1e3a8a] group-hover:bg-white/20 group-hover:text-white px-2 py-0.5 rounded font-bold">PDF</span>
                     </a>
 
                     <a
                       href={M3_FORM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 rounded-xl bg-white border-2 border-[#0F766E] text-[#0F766E] hover:bg-[#0F766E] hover:text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-between group"
+                      className="w-full py-2.5 px-4 rounded-xl bg-white border-2 border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-between group"
                     >
                       <span className="flex items-center gap-2">
                         <Download className="w-4 h-4 shrink-0 transition-transform group-hover:-translate-y-0.5" />
                         <span>Download M3 Form (Hackathons)</span>
                       </span>
-                      <span className="text-[10px] bg-emerald-50 text-[#0F766E] group-hover:bg-white/20 group-hover:text-white px-2 py-0.5 rounded font-bold">PDF</span>
+                      <span className="text-[10px] bg-blue-50 text-[#1e3a8a] group-hover:bg-white/20 group-hover:text-white px-2 py-0.5 rounded font-bold">PDF</span>
                     </a>
                   </div>
                 </div>

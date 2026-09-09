@@ -53,7 +53,7 @@ export default function DeveloperPage() {
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
-          backgroundImage: "radial-gradient(circle, rgba(15,118,110,0.09) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(circle, rgba(30,58,138,0.09) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.5,
         }}
@@ -87,7 +87,7 @@ export default function DeveloperPage() {
             >
               {/* Top accent */}
               <div
-                style={{ height: "3px", background: "linear-gradient(90deg, #0F766E, #0369A1, #0F766E)" }}
+                style={{ height: "3px", background: "linear-gradient(90deg, #1e3a8a, #0369A1, #1e3a8a)" }}
                 aria-hidden="true"
               />
 
@@ -95,7 +95,7 @@ export default function DeveloperPage() {
                 {/* Avatar */}
                 <div
                   className="w-24 h-24 rounded-full overflow-hidden mb-5 flex-shrink-0"
-                  style={{ border: "2px solid rgba(15,118,110,0.30)", padding: "2px" }}
+                  style={{ border: "2px solid rgba(30,58,138,0.30)", padding: "2px" }}
                 >
                   <img
                     src={dev.image}
@@ -142,7 +142,7 @@ export default function DeveloperPage() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-700 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       style={{ background: "#FFFAF5", border: "1px solid rgba(17,24,39,0.10)" }}
-                      onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(15,118,110,0.30)"; e.currentTarget.style.color = "#0F766E"; }}
+                      onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(30,58,138,0.30)"; e.currentTarget.style.color = "#1e3a8a"; }}
                       onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(17,24,39,0.10)"; e.currentTarget.style.color = "#374151"; }}
                     >
                       <Icon size={12} className="text-accent" aria-hidden="true" />
@@ -167,7 +167,7 @@ export default function DeveloperPage() {
           <div className="inline-flex items-center gap-2 mb-7">
             <div
               className="w-8 h-8 rounded-lg flex items-center justify-center"
-              style={{ background: "rgba(15,118,110,0.08)", border: "1px solid rgba(15,118,110,0.20)" }}
+              style={{ background: "rgba(30,58,138,0.08)", border: "1px solid rgba(30,58,138,0.20)" }}
             >
               <Users size={15} className="text-accent" aria-hidden="true" />
             </div>
@@ -180,12 +180,12 @@ export default function DeveloperPage() {
                 key={idx}
                 className="p-5 rounded-2xl flex flex-col items-center text-center transition-all duration-200"
                 style={{ background: "#FFFAF5", border: "1px solid rgba(17,24,39,0.08)" }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(15,118,110,0.25)"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(30,58,138,0.25)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(17,24,39,0.08)"; }}
               >
                 <div
                   className="w-20 h-20 rounded-full overflow-hidden mb-4"
-                  style={{ border: "2px solid rgba(15,118,110,0.25)", padding: "2px" }}
+                  style={{ border: "2px solid rgba(30,58,138,0.25)", padding: "2px" }}
                 >
                   <img
                     src={guide.img}

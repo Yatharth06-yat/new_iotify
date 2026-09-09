@@ -49,7 +49,7 @@ export default function HardwareSection({ onNavigate }) {
       {/* Radial Glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-32 -right-32 w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(15,118,110,0.06)_0%,_rgba(15,118,110,0.02)_50%,_transparent_70%)] blur-[100px]"
+        className="pointer-events-none absolute -bottom-32 -right-32 w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(30,58,138,0.06)_0%,_rgba(30,58,138,0.02)_50%,_transparent_70%)] blur-[100px]"
       />
 
       <div className="mx-auto max-w-7xl relative z-10 mb-20">

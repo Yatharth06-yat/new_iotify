@@ -134,7 +134,7 @@ export default function ContactPage() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage: "radial-gradient(circle,rgba(15,118,110,0.10) 1px,transparent 1px)",
+            backgroundImage: "radial-gradient(circle,rgba(30,58,138,0.10) 1px,transparent 1px)",
             backgroundSize: "28px 28px",
             opacity: 0.5,
           }}
@@ -177,7 +177,7 @@ export default function ContactPage() {
                     boxShadow: "0 1px 4px rgba(17,24,39,0.04)",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "rgba(15,118,110,0.28)";
+                    e.currentTarget.style.borderColor = "rgba(30,58,138,0.28)";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.borderColor = "rgba(17,24,39,0.09)";
@@ -186,9 +186,9 @@ export default function ContactPage() {
                   <div
                     className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-3 transition-all"
                     style={{
-                      background: "rgba(15,118,110,0.08)",
-                      border: "1px solid rgba(15,118,110,0.18)",
-                      color: "#0F766E",
+                      background: "rgba(30,58,138,0.08)",
+                      border: "1px solid rgba(30,58,138,0.18)",
+                      color: "#1e3a8a",
                     }}
                   >
                     <Icon size={19} strokeWidth={1.6} aria-hidden="true" />
@@ -214,9 +214,9 @@ export default function ContactPage() {
                   <div
                     className="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-xl"
                     style={{
-                      background: "rgba(15,118,110,0.08)",
-                      border: "1px solid rgba(15,118,110,0.18)",
-                      color: "#0F766E",
+                      background: "rgba(30,58,138,0.08)",
+                      border: "1px solid rgba(30,58,138,0.18)",
+                      color: "#1e3a8a",
                     }}
                   >
                     <Icon size={19} strokeWidth={1.6} aria-hidden="true" />
@@ -244,7 +244,7 @@ export default function ContactPage() {
                       href={info.href}
                       target={info.href.startsWith("http") ? "_blank" : undefined}
                       rel="noopener noreferrer"
-                      className="flex items-center gap-4 p-5 rounded-2xl transition-all duration-250 hover:border-[#0F766E]/40"
+                      className="flex items-center gap-4 p-5 rounded-2xl transition-all duration-250 hover:border-[#1e3a8a]/40"
                       style={{
                         background: "#FFFFFF",
                         border: "1px solid rgba(17,24,39,0.09)",
@@ -312,7 +312,7 @@ export default function ContactPage() {
             >
               {/* Top accent */}
               <div
-                style={{ height: "3px", background: "linear-gradient(90deg, #0F766E, #0369A1, #0F766E)" }}
+                style={{ height: "3px", background: "linear-gradient(90deg, #1e3a8a, #0369A1, #1e3a8a)" }}
                 aria-hidden="true"
               />
 
@@ -325,7 +325,7 @@ export default function ContactPage() {
                   >
                     <div
                       className="w-16 h-16 rounded-full flex items-center justify-center mb-5"
-                      style={{ background: "rgba(15,118,110,0.08)", border: "1px solid rgba(15,118,110,0.25)" }}
+                      style={{ background: "rgba(30,58,138,0.08)", border: "1px solid rgba(30,58,138,0.25)" }}
                     >
                       <Send size={28} className="text-accent" aria-hidden="true" />
                     </div>
@@ -360,8 +360,8 @@ export default function ContactPage() {
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
                             style={INPUT_STYLE}
                             onFocus={(e) => {
-                              e.target.style.borderColor = "#0F766E";
-                              e.target.style.boxShadow = "0 0 0 3px rgba(15,118,110,0.10)";
+                              e.target.style.borderColor = "#1e3a8a";
+                              e.target.style.boxShadow = "0 0 0 3px rgba(30,58,138,0.10)";
                             }}
                             onBlur={(e) => {
                               e.target.style.borderColor = "rgba(17,24,39,0.13)";
@@ -382,8 +382,8 @@ export default function ContactPage() {
                             onChange={(e) => setForm({ ...form, email: e.target.value })}
                             style={INPUT_STYLE}
                             onFocus={(e) => {
-                              e.target.style.borderColor = "#0F766E";
-                              e.target.style.boxShadow = "0 0 0 3px rgba(15,118,110,0.10)";
+                              e.target.style.borderColor = "#1e3a8a";
+                              e.target.style.boxShadow = "0 0 0 3px rgba(30,58,138,0.10)";
                             }}
                             onBlur={(e) => {
                               e.target.style.borderColor = "rgba(17,24,39,0.13)";
@@ -403,8 +403,8 @@ export default function ContactPage() {
                           onChange={(e) => setForm({ ...form, subject: e.target.value })}
                           style={{ ...INPUT_STYLE, cursor: "pointer" }}
                           onFocus={(e) => {
-                            e.target.style.borderColor = "#0F766E";
-                            e.target.style.boxShadow = "0 0 0 3px rgba(15,118,110,0.10)";
+                            e.target.style.borderColor = "#1e3a8a";
+                            e.target.style.boxShadow = "0 0 0 3px rgba(30,58,138,0.10)";
                           }}
                           onBlur={(e) => {
                             e.target.style.borderColor = "rgba(17,24,39,0.13)";
@@ -434,8 +434,8 @@ export default function ContactPage() {
                           onChange={(e) => setForm({ ...form, message: e.target.value })}
                           style={{ ...INPUT_STYLE, resize: "vertical", minHeight: "110px", lineHeight: "1.6" }}
                           onFocus={(e) => {
-                            e.target.style.borderColor = "#0F766E";
-                            e.target.style.boxShadow = "0 0 0 3px rgba(15,118,110,0.10)";
+                            e.target.style.borderColor = "#1e3a8a";
+                            e.target.style.boxShadow = "0 0 0 3px rgba(30,58,138,0.10)";
                           }}
                           onBlur={(e) => {
                             e.target.style.borderColor = "rgba(17,24,39,0.13)";
@@ -450,9 +450,9 @@ export default function ContactPage() {
                         whileTap={{ scale: 0.98 }}
                         className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-semibold text-sm text-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                         style={{
-                          background: "#0F766E",
-                          border: "1px solid #0D6860",
-                          boxShadow: "0 2px 8px rgba(15,118,110,0.22)",
+                          background: "#1e3a8a",
+                          border: "1px solid #1e40af",
+                          boxShadow: "0 2px 8px rgba(30,58,138,0.22)",
                         }}
                       >
                         <Send size={15} aria-hidden="true" />

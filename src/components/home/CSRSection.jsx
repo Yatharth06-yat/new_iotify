@@ -24,7 +24,7 @@ export default function CSRSection({ onNavigate }) {
       {/* Radial Glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-32 -left-32 w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(15,118,110,0.08)_0%,_transparent_70%)] blur-[100px]"
+        className="pointer-events-none absolute -top-32 -left-32 w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(30,58,138,0.08)_0%,_transparent_70%)] blur-[100px]"
       />
 
       <div className="mx-auto max-w-7xl relative z-10">

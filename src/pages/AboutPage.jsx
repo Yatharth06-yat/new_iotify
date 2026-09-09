@@ -347,12 +347,12 @@ function TeamCard({ name, role, image, index = 0, isLeader = false, imageClassNa
         delay: index * 0.08,
       }}
       whileHover={{ y: -6, boxShadow: "0 12px 32px rgba(0,0,0,0.10)", transition: { duration: 0.3 } }}
-      className={`bg-[#FDF6EE] rounded-2xl flex flex-col items-center text-center w-full border border-teal-800/10 shadow-sm ${compact ? "px-3 pt-5 pb-4 min-h-[250px]" : "px-5 pt-7 pb-6 h-full"
+      className={`bg-[#FDF6EE] rounded-2xl flex flex-col items-center text-center w-full border border-blue-800/10 shadow-sm ${compact ? "px-3 pt-5 pb-4 min-h-[250px]" : "px-5 pt-7 pb-6 h-full"
         }`}
     >
       {/* Circular image with teal ring + white gap */}
       <div className={`rounded-full p-[3px] ${compact ? "mb-3" : "mb-4"}`}
-        style={{ outline: "2px solid #0F766E", outlineOffset: "3px" }}>
+        style={{ outline: "2px solid #1e3a8a", outlineOffset: "3px" }}>
         <div className={`${compact ? "w-20 h-20" : "w-24 h-24"} rounded-full overflow-hidden bg-white shadow-inner`}>
           <motion.img
             src={image}
@@ -372,7 +372,7 @@ function TeamCard({ name, role, image, index = 0, isLeader = false, imageClassNa
 
       {/* Designation */}
       {designation && (
-        <p className={`font-bold text-[#0F766E] leading-snug px-1 ${compact ? "text-[11px] mb-1" : "text-xs mb-1.5"}`}>
+        <p className={`font-bold text-[#1e3a8a] leading-snug px-1 ${compact ? "text-[11px] mb-1" : "text-xs mb-1.5"}`}>
           {designation}
         </p>
       )}
@@ -404,7 +404,7 @@ function AboutSection({ onNavigate = () => { } }) {
         className="pointer-events-none absolute -top-24 -right-24 w-[500px] h-[500px] rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(15,118,110,0.08) 0%, rgba(15,118,110,0.02) 40%, transparent 70%)",
+            "radial-gradient(circle, rgba(30,58,138,0.08) 0%, rgba(30,58,138,0.02) 40%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -595,7 +595,7 @@ function ClientsSection() {
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-24 -left-24 w-[500px] h-[500px] rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(15,118,110,0.06) 0%, rgba(15,118,110,0.02) 50%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(30,58,138,0.06) 0%, rgba(30,58,138,0.02) 50%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -789,7 +789,7 @@ function NeedPolicySection() {
         aria-hidden="true"
         className="pointer-events-none absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(15,118,110,0.07) 0%, rgba(15,118,110,0.02) 50%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(30,58,138,0.07) 0%, rgba(30,58,138,0.02) 50%, transparent 70%)",
           filter: "blur(70px)",
         }}
       />
@@ -973,7 +973,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-cream-primary text-gray-900 font-body overflow-x-hidden">
       <style>{`
         .bg-grid-lines opacity-[0.4] {
-          background-image: radial-gradient(rgba(15, 118, 110, 0.08) 1px, transparent 1px);
+          background-image: radial-gradient(rgba(30, 58, 138, 0.08) 1px, transparent 1px);
           background-size: 16px 16px;
         }
         .eyebrow-badge {
@@ -982,39 +982,39 @@ export default function AboutPage() {
           gap: 0.5rem;
           padding: 0.35rem 0.85rem;
           border-radius: 9999px;
-          background: rgba(15, 118, 110, 0.08);
-          border: 1px solid rgba(15, 118, 110, 0.25);
-          color: #0f766e;
+          background: rgba(30, 58, 138, 0.08);
+          border: 1px solid rgba(30, 58, 138, 0.25);
+          color: #1e3a8a;
           font-weight: 600;
         }
         .glow-dot {
           width: 6px;
           height: 6px;
           border-radius: 50%;
-          background-color: #0f766e;
-          box-shadow: 0 0 8px #0f766e;
+          background-color: #1e3a8a;
+          box-shadow: 0 0 8px #1e3a8a;
         }
         .section-label {
           font-family: 'Orbitron', monospace, sans-serif;
           font-size: 0.75rem;
           letter-spacing: 0.15em;
           text-transform: uppercase;
-          color: #0f766e;
+          color: #1e3a8a;
           font-weight: 600;
         }
         .text-gradient {
-          background: linear-gradient(135deg, #0f766e 0%, #22e6b8 100%);
+          background: linear-gradient(135deg, #1e3a8a 0%, #22e6b8 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
         .bg-white border-gray-200 shadow-sm {
           background: rgba(255, 255, 255, 0.95);
           backdrop-filter: blur(16px);
-          border: 1px solid rgba(15, 118, 110, 0.15);
+          border: 1px solid rgba(30, 58, 138, 0.15);
         }
         .glow-line {
           height: 2px;
-          background: linear-gradient(90deg, #0f766e, transparent);
+          background: linear-gradient(90deg, #1e3a8a, transparent);
         }
         .gradient-mesh {
           position: absolute;
@@ -1023,7 +1023,7 @@ export default function AboutPage() {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background: radial-gradient(circle, rgba(15, 118, 110, 0.1) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(30, 58, 138, 0.1) 0%, transparent 70%);
           filter: blur(80px);
         }
       `}</style>

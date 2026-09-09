@@ -336,7 +336,7 @@ export default function AdminWorkshops() {
                           {canWrite && ws.status !== "Published" && (
                             <button
                               onClick={() => setStatus(ws, "Published")}
-                              className="p-2 hover:bg-green-500/10 rounded-lg a-muted hover:text-green-400 transition-colors"
+                              className="p-2 hover:bg-blue-700/10 rounded-lg a-muted hover:text-blue-700 transition-colors"
                               title="Publish"
                             >
                               <Send size={16} />

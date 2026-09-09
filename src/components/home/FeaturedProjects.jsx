@@ -45,7 +45,7 @@ const PROJECTS = [
 ];
 
 const STATUS_COLORS = {
-  Live: "text-emerald-400 border-emerald-400/30 bg-emerald-400/[0.07]",
+  Live: "text-blue-800 border-blue-200/30 bg-blue-400/[0.07]",
   Research: "text-accent border-accent/30 bg-accent/[0.07]",
   Deployed: "text-blue-accent border-blue-accent/30 bg-blue-accent/[0.07]",
 };

@@ -19,7 +19,7 @@ export default function CompanyAbout() {
       {/* Subtle Background Glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-32 -left-32 w-[550px] h-[550px] bg-[radial-gradient(circle,_rgba(15,118,110,0.14)_0%,_rgba(15,118,110,0.06)_50%,_transparent_70%)] blur-[120px]"
+        className="pointer-events-none absolute -top-32 -left-32 w-[550px] h-[550px] bg-[radial-gradient(circle,_rgba(30,58,138,0.14)_0%,_rgba(30,58,138,0.06)_50%,_transparent_70%)] blur-[120px]"
       />
 
       <div className="mx-auto max-w-7xl px-6 relative z-10">

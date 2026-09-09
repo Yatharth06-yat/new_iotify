@@ -52,7 +52,7 @@ export default function FAQ() {
       {/* Radial Glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-32 -left-32 w-[550px] h-[550px] bg-[radial-gradient(circle,_rgba(15,118,110,0.1)_0%,_transparent_70%)] blur-[130px]"
+        className="pointer-events-none absolute -bottom-32 -left-32 w-[550px] h-[550px] bg-[radial-gradient(circle,_rgba(30,58,138,0.1)_0%,_transparent_70%)] blur-[130px]"
       />
 
       <div className="mx-auto max-w-6xl relative z-10">
@@ -91,7 +91,7 @@ export default function FAQ() {
                 transition={{ duration: 0.5, delay: (idx % 2) * 0.1 }}
                 className={`bg-white border-gray-200 shadow-sm rounded-2xl border transition-all duration-300 overflow-hidden bg-white/[0.03] ${
                   isOpen
-                    ? "border-accent/50 shadow-[0_10px_30px_rgba(15,118,110,0.15)]"
+                    ? "border-accent/50 shadow-[0_10px_30px_rgba(30,58,138,0.15)]"
                     : "border-white/[0.09] hover:border-white/20"
                 }`}
               >

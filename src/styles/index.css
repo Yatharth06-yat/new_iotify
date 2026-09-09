@@ -24,15 +24,15 @@
   --text-light:     #9CA3AF;
 
   /* Institutional accent — teal */
-  --accent:       #0F766E;
-  --accent-light: #14B8A6;
-  --accent-dark:  #0D6860;
+  --accent:       #1e3a8a;
+  --accent-light: #3b82f6;
+  --accent-dark:  #1e40af;
   --accent-blue:  #0369A1;
 
   /* Borders */
   --border:        rgba(17, 24, 39, 0.10);
   --border-light:  rgba(17, 24, 39, 0.06);
-  --border-accent: rgba(15, 118, 110, 0.25);
+  --border-accent: rgba(30, 58, 138, 0.25);
 
   /* Shadows */
   --shadow-card: 0 2px 8px -2px rgba(17,24,39,0.06), 0 1px 3px rgba(17,24,39,0.04);
@@ -71,14 +71,14 @@ body {
 
 /* Selection */
 ::selection {
-  background: rgba(15, 118, 110, 0.15);
+  background: rgba(30, 58, 138, 0.15);
   color: #111827;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar          { width: 6px; }
 ::-webkit-scrollbar-track    { background: var(--bg-secondary); }
-::-webkit-scrollbar-thumb    { background: rgba(15,118,110,0.4); border-radius: 999px; }
+::-webkit-scrollbar-thumb    { background: rgba(30,58,138,0.4); border-radius: 999px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
 /* Focus visible — keyboard nav */
@@ -185,7 +185,7 @@ body {
     background: var(--accent);
     border-color: var(--accent);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(15,118,110,0.25);
+    box-shadow: 0 4px 12px rgba(30,58,138,0.25);
   }
 
   .btn-primary:active {
@@ -197,13 +197,13 @@ body {
     @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm tracking-wide text-white transition-all duration-300;
     background: var(--accent);
     border: 1px solid var(--accent-dark);
-    box-shadow: 0 2px 8px rgba(15,118,110,0.20);
+    box-shadow: 0 2px 8px rgba(30,58,138,0.20);
   }
 
   .btn-accent:hover {
     background: var(--accent-dark);
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(15,118,110,0.30);
+    box-shadow: 0 4px 16px rgba(30,58,138,0.30);
   }
 
   .btn-accent:active {
@@ -234,7 +234,7 @@ body {
   }
 
   .btn-outline-cyan:hover {
-    background: rgba(15,118,110,0.06);
+    background: rgba(30,58,138,0.06);
     border-color: var(--accent);
     transform: translateY(-1px);
   }
@@ -254,7 +254,7 @@ body {
     text-transform: uppercase;
     border: 1px solid var(--border-accent);
     color: var(--accent);
-    background: rgba(15, 118, 110, 0.06);
+    background: rgba(30, 58, 138, 0.06);
   }
 
   .section-label {
@@ -289,19 +289,19 @@ body {
   .glow-line {
     height: 1px;
     width: 100%;
-    background: linear-gradient(90deg, transparent, rgba(15,118,110,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(30,58,138,0.3), transparent);
   }
 
   .circuit-dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: rgba(15,118,110,0.5);
+    background: rgba(30,58,138,0.5);
   }
 
   .tag-badge {
     @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide border;
-    background: rgba(15,118,110,0.06);
+    background: rgba(30,58,138,0.06);
     border-color: var(--border-accent);
     color: var(--accent);
   }
@@ -311,19 +311,19 @@ body {
     height: 6px;
     border-radius: 50%;
     background: var(--accent);
-    box-shadow: 0 0 8px rgba(15,118,110,0.5);
+    box-shadow: 0 0 8px rgba(30,58,138,0.5);
   }
 
   /* ── Background patterns ─────────────────────────────────────── */
 
   /* Subtle dot grid — used behind hero and sections */
   .circuit-bg {
-    background-image: radial-gradient(circle, rgba(15,118,110,0.10) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(30,58,138,0.10) 1px, transparent 1px);
     background-size: 28px 28px;
   }
 
   .blueprint-bg {
-    background-image: radial-gradient(circle, rgba(15,118,110,0.07) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(30,58,138,0.07) 1px, transparent 1px);
     background-size: 24px 24px;
   }
 
@@ -349,7 +349,7 @@ body {
     width: 800px;
     height: 800px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(15,118,110,0.07) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(30,58,138,0.07) 0%, transparent 70%);
     top: -200px;
     left: -100px;
     animation: drift 18s ease-in-out infinite;
@@ -426,7 +426,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: rgba(15,118,110,0.08);
+    background: rgba(30,58,138,0.08);
     border: 1.5px solid var(--border-accent);
     color: var(--accent);
     font-size: 12px;

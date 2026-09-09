@@ -32,7 +32,7 @@ export default function ExploreIoT() {
       {/* Dot grid */}
       <div
         className="fixed inset-0 pointer-events-none z-0"
-        style={{ backgroundImage: "radial-gradient(circle,rgba(15,118,110,0.09) 1px,transparent 1px)", backgroundSize: "28px 28px", opacity: 0.5 }}
+        style={{ backgroundImage: "radial-gradient(circle,rgba(30,58,138,0.09) 1px,transparent 1px)", backgroundSize: "28px 28px", opacity: 0.5 }}
         aria-hidden="true"
       />
       
@@ -53,7 +53,7 @@ export default function ExploreIoT() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="#roadmap" className="px-7 py-3.5 rounded-xl text-white font-bold transition-all flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" style={{background:"#0F766E",border:"1px solid #0D6860",boxShadow:"0 2px 8px rgba(15,118,110,0.22)"}}>
+            <a href="#roadmap" className="px-7 py-3.5 rounded-xl text-white font-bold transition-all flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" style={{background:"#1e3a8a",border:"1px solid #1e40af",boxShadow:"0 2px 8px rgba(30,58,138,0.22)"}}>
               <span>Start Exploring</span>
               <ArrowRight className="w-4 h-4" />
             </a>
@@ -352,7 +352,7 @@ export default function ExploreIoT() {
                 href="/pdf/IoT-Complete-Guide.pdf"
                 download="IoT-Complete-Guide.pdf"
                 className="px-6 py-3.5 rounded-xl text-white font-bold text-center transition-all flex items-center justify-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                style={{background:"#0F766E",border:"1px solid #0D6860",boxShadow:"0 2px 8px rgba(15,118,110,0.22)"}}
+                style={{background:"#1e3a8a",border:"1px solid #1e40af",boxShadow:"0 2px 8px rgba(30,58,138,0.22)"}}
               >
                 <Download className="w-4 h-4" />
                 <span>Download PDF</span>
@@ -382,7 +382,7 @@ export default function ExploreIoT() {
             <a
               href="#roadmap"
               className="px-7 py-3.5 rounded-xl text-white font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              style={{background:"#0F766E",border:"1px solid #0D6860",boxShadow:"0 2px 8px rgba(15,118,110,0.20)"}}
+              style={{background:"#1e3a8a",border:"1px solid #1e40af",boxShadow:"0 2px 8px rgba(30,58,138,0.20)"}}
             >
               Explore Roadmap
             </a>

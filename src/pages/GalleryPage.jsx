@@ -395,7 +395,7 @@ export default function GalleryPage() {
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
-          backgroundImage: "radial-gradient(circle, rgba(15,118,110,0.08) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(circle, rgba(30,58,138,0.08) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.5,
         }}
@@ -405,7 +405,7 @@ export default function GalleryPage() {
       {/* ── HEADER SECTION ── */}
       <section className="relative px-6 pt-4 pb-4 text-center z-10 max-w-4xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full border mb-3" style={{ background: "rgba(15,118,110,0.08)", borderColor: "rgba(15,118,110,0.22)", color: "#0F766E" }}>
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full border mb-3" style={{ background: "rgba(30,58,138,0.08)", borderColor: "rgba(30,58,138,0.22)", color: "#1e3a8a" }}>
             <Sparkles size={13} className="text-accent" />
             Lab Visual Showcase
           </span>
@@ -427,7 +427,7 @@ export default function GalleryPage() {
           style={{ background: "rgba(255,255,255,0.7)", border: "1px solid rgba(17,24,39,0.09)" }}
         >
           <div className="flex items-center gap-2">
-            <Activity size={13} className="text-emerald-500" />
+            <Activity size={13} className="text-blue-800" />
             <span>STATUS: <strong className="text-gray-900">ONLINE</strong></span>
           </div>
           <div className="w-px h-3.5 bg-gray-200" />
@@ -560,7 +560,7 @@ export default function GalleryPage() {
           {viewMode === "globe" && (
             <button
               onClick={() => setIsPlaying(!isPlaying)}
-              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gray-100 border border-accent/40 text-accent hover:bg-cyan-950/50 transition-all text-xs font-semibold shadow-[0_0_10px_rgba(15,118,110,0.15)]"
+              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gray-100 border border-accent/40 text-accent hover:bg-cyan-950/50 transition-all text-xs font-semibold shadow-[0_0_10px_rgba(30,58,138,0.15)]"
             >
               {isPlaying ? <Pause size={13} /> : <Play size={13} />}
               <span>{isPlaying ? "Pause" : "Rotate"}</span>
@@ -663,7 +663,7 @@ export default function GalleryPage() {
                     onClick={() => openLightbox(idx)}
                     className="group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1"
                     style={{ background: "#FFFFFF", border: "1px solid rgba(17,24,39,0.10)", boxShadow: "0 2px 8px rgba(17,24,39,0.06)" }}
-                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(15,118,110,0.30)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(17,24,39,0.10)"; }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(30,58,138,0.30)"; e.currentTarget.style.boxShadow = "0 8px 24px rgba(17,24,39,0.10)"; }}
                     onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(17,24,39,0.10)"; e.currentTarget.style.boxShadow = "0 2px 8px rgba(17,24,39,0.06)"; }}
                   >
                     <div className="aspect-[4/3] w-full overflow-hidden relative">
@@ -691,7 +691,7 @@ export default function GalleryPage() {
 
                     <div className="p-4">
                       <div className="flex items-center justify-between gap-2 mb-1.5">
-                        <span className="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full" style={{ background: "rgba(15,118,110,0.08)", color: "#0F766E", border: "1px solid rgba(15,118,110,0.20)" }}>
+                        <span className="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full" style={{ background: "rgba(30,58,138,0.08)", color: "#1e3a8a", border: "1px solid rgba(30,58,138,0.20)" }}>
                           {img.category}
                         </span>
                         <span className="text-[10px] text-gray-400">{img.specs?.split('•')[0]?.trim()}</span>
@@ -755,7 +755,7 @@ export default function GalleryPage() {
               className="max-w-4xl max-h-[85vh] flex flex-col items-center gap-4 w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white" style={{boxShadow:"0 0 0 1px rgba(15,118,110,0.15)"}}>
+              <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white" style={{boxShadow:"0 0 0 1px rgba(30,58,138,0.15)"}}>
                 <img
                   src={filteredImages[lightboxIdx].src}
                   alt={filteredImages[lightboxIdx].title}
@@ -778,7 +778,7 @@ export default function GalleryPage() {
                 <h3 className="font-bold text-gray-900 text-lg sm:text-xl">{filteredImages[lightboxIdx].title}</h3>
                 <p className="text-gray-600 text-xs sm:text-sm mt-1 font-light">{filteredImages[lightboxIdx].desc}</p>
                 <div className="text-[11px] text-gray-500 font-mono mt-3 pt-2 border-t border-gray-200 flex items-center justify-between">
-                  <span className="text-emerald-400">SYSTEM: ONLINE</span>
+                  <span className="text-blue-800">SYSTEM: ONLINE</span>
                   <span className="text-accent">{lightboxIdx + 1} / {filteredImages.length}</span>
                 </div>
               </div>
@@ -812,7 +812,7 @@ function VideoCard({ img, onClick }) {
             animate={{ scale: [0.95, 1.08, 0.95] }}
             transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
             className="px-2.5 py-0.5 text-white font-bold text-xs tracking-wider uppercase rounded-full flex items-center gap-1"
-            style={{ background: "#0F766E" }}
+            style={{ background: "#1e3a8a" }}
           >
             <Zap size={11} className="fill-current" />
             {img.sticker}
@@ -821,7 +821,7 @@ function VideoCard({ img, onClick }) {
       )}
 
       <div className="absolute inset-0 flex flex-col justify-end p-2.5 z-10">
-        <span className="self-start text-[9px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1" style={{ background: "rgba(15,118,110,0.12)", color: "#0F766E" }}>
+        <span className="self-start text-[9px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1" style={{ background: "rgba(30,58,138,0.12)", color: "#1e3a8a" }}>
           {img.category}
         </span>
         <h4 className="font-semibold text-white text-xs line-clamp-1">

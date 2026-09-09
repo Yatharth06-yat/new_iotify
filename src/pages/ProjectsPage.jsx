@@ -236,7 +236,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(circle, rgba(15,118,110,0.09) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(circle, rgba(30,58,138,0.09) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.5,
         }}
@@ -247,7 +247,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
 
         {/* ── Section Header ── */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 mt-20" style={{ background: "rgba(15,118,110,0.08)", border: "1px solid rgba(15,118,110,0.22)", color: "#0F766E" }}>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 mt-20" style={{ background: "rgba(30,58,138,0.08)", border: "1px solid rgba(30,58,138,0.22)", color: "#1e3a8a" }}>
             <Sparkles className="w-3.5 h-3.5" />
             Modules &amp; Hardcopy Forms
           </div>
@@ -260,10 +260,10 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
         </div>
 
         {/* ── Instructions Banner ── */}
-        <div className="mb-8 rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 bg-white border border-[#0F766E]/20 shadow-md">
-          <FileText className="w-5 h-5 text-[#0F766E] shrink-0 mt-0.5" />
+        <div className="mb-8 rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 bg-white border border-[#1e3a8a]/20 shadow-md">
+          <FileText className="w-5 h-5 text-[#1e3a8a] shrink-0 mt-0.5" />
           <div className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-            <span className="font-bold text-[#0F766E]">Hard Copy Form Instruction: </span>
+            <span className="font-bold text-[#1e3a8a]">Hard Copy Form Instruction: </span>
             Download the hardcopy registration form for your module (M1, M2, or M3), fill it manually with parent/school consent, scan the completed form, and upload it when registering online.
           </div>
         </div>
@@ -281,14 +281,14 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse" role="table" aria-label="Program modules details">
                 <thead>
-                  <tr style={{ borderBottom: "2px solid rgba(15,118,110,0.2)", background: "#FFFAF5" }}>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] w-16 text-center">Module</th>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[140px]">Program</th>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[180px]">Modules / Offerings</th>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[280px]">Hands-on Activities / Key Offerings</th>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[140px]">Proposed Duration</th>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[110px]">Last Date to Apply</th>
-                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#0F766E] min-w-[140px] text-center">Details / Action</th>
+                  <tr style={{ borderBottom: "2px solid rgba(30,58,138,0.2)", background: "#FFFAF5" }}>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] w-16 text-center">Module</th>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[140px]">Program</th>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[180px]">Modules / Offerings</th>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[280px]">Hands-on Activities / Key Offerings</th>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[140px]">Proposed Duration</th>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[110px]">Last Date to Apply</th>
+                    <th className="py-4 px-4 sm:px-5 text-xs font-extrabold tracking-wider uppercase text-[#1e3a8a] min-w-[140px] text-center">Details / Action</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 text-xs sm:text-sm">
@@ -306,7 +306,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                             rowSpan={3}
                             className="py-5 px-4 font-extrabold text-base text-center align-top border-r border-gray-200 bg-[#FFFAF5]/60"
                           >
-                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#0F766E] text-white font-mono font-bold text-sm shadow-md">
+                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#1e3a8a] text-white font-mono font-bold text-sm shadow-md">
                               M1
                             </span>
                           </td>
@@ -314,7 +314,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                             rowSpan={3}
                             className="py-5 px-5 font-bold text-gray-900 align-top border-r border-gray-200 bg-[#FFFAF5]/40"
                           >
-                            <div className="text-sm font-bold text-[#0F766E]">{detailedModules[0].program}</div>
+                            <div className="text-sm font-bold text-[#1e3a8a]">{detailedModules[0].program}</div>
                             <div className="text-xs text-gray-500 font-medium mt-1">{detailedModules[0].targetClass}</div>
                             <div className="text-[11px] text-gray-400 mt-2 font-mono">{detailedModules[0].note}</div>
                           </td>
@@ -324,7 +324,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                       {/* Track Offerings */}
                       <td className="py-4 px-5 font-semibold text-gray-900 align-top border-r border-gray-200/80">
                         <div className="flex items-start gap-1.5">
-                          <Zap className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
+                          <Zap className="w-4 h-4 text-[#1e3a8a] shrink-0 mt-0.5" />
                           <span>{track.name}</span>
                         </div>
                       </td>
@@ -335,7 +335,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                           {track.activities.map((act, aIdx) => (
                             <span
                               key={aIdx}
-                              className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-emerald-50 text-[#0F766E] border border-emerald-100"
+                              className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-blue-50 text-[#1e3a8a] border border-blue-200"
                             >
                               • {act}
                             </span>
@@ -344,7 +344,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                       </td>
 
                       {/* Duration */}
-                      <td className="py-4 px-5 font-medium text-[#0F766E] align-top border-r border-gray-200/80 whitespace-nowrap">
+                      <td className="py-4 px-5 font-medium text-[#1e3a8a] align-top border-r border-gray-200/80 whitespace-nowrap">
                         <div className="flex items-center gap-1.5">
                           <Clock className="w-3.5 h-3.5 shrink-0" />
                           <span>{track.duration}</span>
@@ -366,14 +366,14 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                             href={M1_FORM_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                            className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                           >
                             <Download className="w-3.5 h-3.5" />
                             <span>M1 Form</span>
                           </a>
                           <button
                             onClick={handleBookClick}
-                            className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0F766E] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all"
+                            className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all"
                           >
                             <span>Book Now</span>
                             <ChevronRight className="w-3.5 h-3.5" />
@@ -386,12 +386,12 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                   {/* ── M2 ROW ── */}
                   <tr className="hover:bg-[#FFFAF5] transition-colors">
                     <td className="py-5 px-4 font-extrabold text-base text-center align-top border-r border-gray-200 bg-[#FFFAF5]/60">
-                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#0F766E] text-white font-mono font-bold text-sm shadow-md">
+                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#1e3a8a] text-white font-mono font-bold text-sm shadow-md">
                         M2
                       </span>
                     </td>
                     <td className="py-5 px-5 font-bold text-gray-900 align-top border-r border-gray-200 bg-[#FFFAF5]/40">
-                      <div className="text-sm font-bold text-[#0F766E]">{detailedModules[1].program}</div>
+                      <div className="text-sm font-bold text-[#1e3a8a]">{detailedModules[1].program}</div>
                       <div className="text-xs text-gray-500 font-medium mt-1 leading-relaxed">{detailedModules[1].targetClass}</div>
                     </td>
                     <td className="py-4 px-5 font-semibold text-gray-900 align-top border-r border-gray-200/80">
@@ -401,13 +401,13 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                       <ul className="space-y-1">
                         {detailedModules[1].activities.map((act, aIdx) => (
                           <li key={aIdx} className="flex items-start gap-1.5 text-xs text-gray-700">
-                            <span className="text-[#0F766E] font-bold">•</span>
+                            <span className="text-[#1e3a8a] font-bold">•</span>
                             <span>{act}</span>
                           </li>
                         ))}
                       </ul>
                     </td>
-                    <td className="py-4 px-5 font-medium text-[#0F766E] align-top border-r border-gray-200/80">
+                    <td className="py-4 px-5 font-medium text-[#1e3a8a] align-top border-r border-gray-200/80">
                       <div className="flex items-start gap-1.5">
                         <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5" />
                         <span>{detailedModules[1].duration}</span>
@@ -422,14 +422,14 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                           href={M2_FORM_URL}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                          className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                         >
                           <Download className="w-3.5 h-3.5" />
                           <span>M2 Form</span>
                         </a>
                         <button
                           onClick={handleBookClick}
-                          className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0F766E] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all"
+                          className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all"
                         >
                           <span>Book Now</span>
                           <ChevronRight className="w-3.5 h-3.5" />
@@ -441,12 +441,12 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                   {/* ── M3 ROW ── */}
                   <tr className="hover:bg-[#FFFAF5] transition-colors">
                     <td className="py-5 px-4 font-extrabold text-base text-center align-top border-r border-gray-200 bg-[#FFFAF5]/60">
-                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#0F766E] text-white font-mono font-bold text-sm shadow-md">
+                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#1e3a8a] text-white font-mono font-bold text-sm shadow-md">
                         M3
                       </span>
                     </td>
                     <td className="py-5 px-5 font-bold text-gray-900 align-top border-r border-gray-200 bg-[#FFFAF5]/40">
-                      <div className="text-sm font-bold text-[#0F766E]">{detailedModules[2].program}</div>
+                      <div className="text-sm font-bold text-[#1e3a8a]">{detailedModules[2].program}</div>
                       <div className="text-xs text-gray-500 font-medium mt-1">{detailedModules[2].targetClass}</div>
                     </td>
                     <td className="py-4 px-5 font-semibold text-gray-900 align-top border-r border-gray-200/80">
@@ -455,7 +455,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                     <td className="py-4 px-5 text-gray-700 align-top border-r border-gray-200/80 leading-relaxed text-xs">
                       {detailedModules[2].description}
                     </td>
-                    <td className="py-4 px-5 font-medium text-[#0F766E] align-top border-r border-gray-200/80">
+                    <td className="py-4 px-5 font-medium text-[#1e3a8a] align-top border-r border-gray-200/80">
                       <div className="flex items-start gap-1.5">
                         <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5" />
                         <span>{detailedModules[2].duration}</span>
@@ -470,14 +470,14 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                           href={M3_FORM_URL}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                          className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                         >
                           <Download className="w-3.5 h-3.5" />
                           <span>M3 Form</span>
                         </a>
                         <button
                           onClick={handleBookClick}
-                          className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#0F766E] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all"
+                          className="w-full inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#1e3a8a] bg-blue-50 hover:bg-blue-100 border border-blue-200 transition-all"
                         >
                           <span>Book Now</span>
                           <ChevronRight className="w-3.5 h-3.5" />
@@ -512,7 +512,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                     {["S.No.", "Financial Model", "Proposed Fee", "Payment Mechanism", "Modules", ""].map((h) => (
                       <th
                         key={h}
-                        className="py-3.5 px-5 text-[11px] font-bold tracking-[0.08em] uppercase text-[#0F766E]"
+                        className="py-3.5 px-5 text-[11px] font-bold tracking-[0.08em] uppercase text-[#1e3a8a]"
                       >
                         {h}
                       </th>
@@ -525,11 +525,11 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                       key={idx}
                       className="hover:bg-[#FFFAF5] transition-colors duration-150 border-b border-gray-100"
                     >
-                      <td className="py-4 px-5 font-bold font-mono text-sm text-[#0F766E]">
+                      <td className="py-4 px-5 font-bold font-mono text-sm text-[#1e3a8a]">
                         {item.sno}.
                       </td>
                       <td className="py-4 px-5 font-semibold text-sm text-gray-900">{item.model}</td>
-                      <td className="py-4 px-5 font-bold text-sm text-[#0F766E] whitespace-nowrap">
+                      <td className="py-4 px-5 font-bold text-sm text-[#1e3a8a] whitespace-nowrap">
                         {item.fee}
                       </td>
                       <td className="py-4 px-5 text-sm text-gray-600 leading-relaxed max-w-[240px]">
@@ -537,7 +537,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                       </td>
                       <td className="py-4 px-5 text-center whitespace-nowrap">
                         <span
-                          className="inline-block px-3 py-1 rounded-full text-xs font-bold font-mono bg-[#0F766E]/10 text-[#0F766E] border border-[#0F766E]/20"
+                          className="inline-block px-3 py-1 rounded-full text-xs font-bold font-mono bg-[#1e3a8a]/10 text-[#1e3a8a] border border-[#1e3a8a]/20"
                         >
                           {item.modules}
                         </span>
@@ -545,7 +545,7 @@ export default function TrainingAndFinancialModels({ onNavigate }) {
                       <td className="py-4 px-5 whitespace-nowrap">
                         <button
                           onClick={handleBookClick}
-                          className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#0F766E] hover:bg-[#0D6860] shadow-sm transition-all"
+                          className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-[#1e3a8a] hover:bg-[#1e40af] shadow-sm transition-all"
                         >
                           <span>Book</span>
                           <ChevronRight className="w-3.5 h-3.5" />

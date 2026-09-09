@@ -42,7 +42,7 @@ export default function StatsCounter() {
       {/* Background Radial Glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(15,118,110,0.04)_0%,_transparent_70%)] blur-[100px]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(30,58,138,0.04)_0%,_transparent_70%)] blur-[100px]"
       />
 
       <div className="mx-auto max-w-7xl px-6 relative z-10">

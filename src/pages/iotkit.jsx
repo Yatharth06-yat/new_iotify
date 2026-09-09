@@ -552,7 +552,7 @@ export function KitModal({ selectedKit, closeModal }) {
               {selectedKit.thumbnails.map((img, idx) => (
                 <button
                   key={idx}
-                  className={`relative rounded-lg overflow-hidden border transition-all ${activeThumb === idx ? "border-accent shadow-[0_0_12px_rgba(15,118,110,0.3)]" : "border-gray-200 opacity-60 hover:opacity-100"
+                  className={`relative rounded-lg overflow-hidden border transition-all ${activeThumb === idx ? "border-accent shadow-[0_0_12px_rgba(30,58,138,0.3)]" : "border-gray-200 opacity-60 hover:opacity-100"
                     }`}
                   onClick={() => handleThumbSelect(idx)}
                 >
@@ -617,7 +617,7 @@ export function KitModal({ selectedKit, closeModal }) {
                 <button
                   key={tab}
                   className={`px-3.5 py-1.5 rounded-lg text-xs font-bold tracking-wide transition-all ${activeTab === tab
-                      ? "bg-accent text-white shadow-[0_0_12px_rgba(15,118,110,0.4)]"
+                      ? "bg-accent text-white shadow-[0_0_12px_rgba(30,58,138,0.4)]"
                       : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                     }`}
                   onClick={() => setActiveTab(tab)}
@@ -753,7 +753,7 @@ export default function App() {
             <button
               key={filter}
               className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${activeFilter === filter
-                  ? "bg-gradient-to-r from-accent to-accent-light text-white font-bold shadow-[0_0_15px_rgba(15,118,110,0.4)]"
+                  ? "bg-gradient-to-r from-accent to-accent-light text-white font-bold shadow-[0_0_15px_rgba(30,58,138,0.4)]"
                   : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                 }`}
               onClick={() => setActiveFilter(filter)}
@@ -813,7 +813,7 @@ export default function App() {
                       Specs
                     </button>
                     <button
-                      className="py-1.5 px-2 rounded-xl bg-gradient-to-r from-accent to-accent-light hover:from-sky-300 hover:to-blue-400 text-white text-xs font-bold shadow-[0_0_15px_rgba(15,118,110,0.3)] transition-all"
+                      className="py-1.5 px-2 rounded-xl bg-gradient-to-r from-accent to-accent-light hover:from-sky-300 hover:to-blue-400 text-white text-xs font-bold shadow-[0_0_15px_rgba(30,58,138,0.3)] transition-all"
                       onClick={(e) => { e.stopPropagation(); openModal(kit); }}
                     >
                       View

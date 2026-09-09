@@ -39,7 +39,7 @@ export default function FloatingConnectWidget() {
               background: "rgba(255, 255, 255, 0.95)",
               backdropFilter: "blur(16px)",
               border: "1px solid rgba(17, 24, 39, 0.12)",
-              boxShadow: "0 20px 40px -10px rgba(15, 118, 110, 0.25), 0 10px 20px -5px rgba(0, 0, 0, 0.1)",
+              boxShadow: "0 20px 40px -10px rgba(30, 58, 138, 0.25), 0 10px 20px -5px rgba(0, 0, 0, 0.1)",
             }}
           >
             {/* Header / Title */}
@@ -48,7 +48,7 @@ export default function FloatingConnectWidget() {
                 <Sparkles size={13} className="text-accent" />
                 Connect With Us
               </span>
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             </div>
 
             <div className="flex flex-col gap-1">
@@ -58,7 +58,7 @@ export default function FloatingConnectWidget() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50 transition-all duration-200 group text-left"
+                className="flex items-center gap-3 p-2.5 rounded-xl hover:bg-blue-50 transition-all duration-200 group text-left"
               >
                 <div className="w-10 h-10 rounded-xl bg-[#25D366] text-white flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-105 transition-transform duration-200">
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -111,8 +111,8 @@ export default function FloatingConnectWidget() {
         style={{
           background: isOpen 
             ? "#1F2937" 
-            : "linear-gradient(135deg, #0F766E 0%, #0D6860 100%)",
-          boxShadow: "0 10px 25px -5px rgba(15, 118, 110, 0.4), 0 4px 10px -2px rgba(0, 0, 0, 0.1)",
+            : "linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%)",
+          boxShadow: "0 10px 25px -5px rgba(30, 58, 138, 0.4), 0 4px 10px -2px rgba(0, 0, 0, 0.1)",
         }}
         aria-label={isOpen ? "Close Connect Menu" : "Open Connect Menu"}
         title="Quick Connect Menu"
@@ -140,8 +140,8 @@ export default function FloatingConnectWidget() {
               <MessageCircle size={26} />
               {/* Subtle pulse ring */}
               <span className="absolute -top-1 -right-1 flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
               </span>
             </motion.div>
           )}

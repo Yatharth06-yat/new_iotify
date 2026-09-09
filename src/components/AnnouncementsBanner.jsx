@@ -29,8 +29,8 @@ export default function AnnouncementsBanner() {
           key={a.id}
           className="flex items-start gap-3 p-4 rounded-2xl"
           style={{
-            background: "rgba(15,118,110,0.06)",
-            border: "1px solid rgba(15,118,110,0.22)",
+            background: "rgba(30,58,138,0.06)",
+            border: "1px solid rgba(30,58,138,0.22)",
           }}
         >
           <Megaphone className="w-4 h-4 text-accent mt-0.5 shrink-0" aria-hidden="true" />

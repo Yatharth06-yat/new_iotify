@@ -199,7 +199,7 @@ export default function AdminDashboard({ onNavigate }) {
     { label: "Registrations", value: stats.totalRegs, icon: Users, color: "text-purple-400" },
     { label: "Today", value: stats.todayRegs, icon: Clock, color: "text-cyan-400" },
     { label: "Pending", value: stats.pending, icon: CheckCircle, color: "text-yellow-400" },
-    { label: "Seats Left", value: stats.availableSeats, icon: Armchair, color: "text-green-400" },
+    { label: "Seats Left", value: stats.availableSeats, icon: Armchair, color: "text-blue-700" },
   ];
 
   const hasData = registrations.length > 0;

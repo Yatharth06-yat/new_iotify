@@ -77,7 +77,7 @@ export default function ProjectsPage() {
         aria-hidden="true"
         className="pointer-events-none absolute top-1/4 right-1/4 w-[600px] h-[600px] rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(15,118,110,0.06) 0%, rgba(3,105,161,0.03) 50%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(30,58,138,0.06) 0%, rgba(3,105,161,0.03) 50%, transparent 70%)",
           filter: "blur(100px)",
         }}
       />
@@ -195,8 +195,8 @@ export default function ProjectsPage() {
                       <div className="flex items-center justify-between pb-3 border-b border-gray-100">
                         <div className="flex items-center gap-3">
                           <div className="relative flex items-center justify-center">
-                            <span className="w-2.5 h-2.5 rounded-full bg-green-500 animate-ping absolute" />
-                            <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
+                            <span className="w-2.5 h-2.5 rounded-full bg-blue-700 animate-ping absolute" />
+                            <span className="w-2.5 h-2.5 rounded-full bg-blue-700" />
                           </div>
                           <span className="text-xs font-sans font-bold tracking-wide text-gray-900 truncate max-w-[200px]">
                             {item.title.split(":")[0]}

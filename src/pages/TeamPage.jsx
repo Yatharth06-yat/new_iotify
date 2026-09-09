@@ -90,7 +90,7 @@ function FacultyCard({ member, i }) {
           {member.initials}
         </div>
         {/* Status dot */}
-        <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-400 border-2 border-[#090B11]" />
+        <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-blue-400 border-2 border-[#090B11]" />
       </div>
 
       <h3 className="font-display font-bold text-gray-900 text-xl mb-1 group-hover:text-cyan-bright transition-colors">{member.name}</h3>

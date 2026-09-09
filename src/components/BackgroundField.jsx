@@ -23,7 +23,7 @@ export default function BackgroundField() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgba(15,118,110,0.10) 1px, transparent 1px)",
+            "radial-gradient(circle, rgba(30,58,138,0.10) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.55,
         }}
@@ -37,7 +37,7 @@ export default function BackgroundField() {
           height: "650px",
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(15,118,110,0.07) 0%, rgba(3,105,161,0.03) 45%, transparent 70%)",
+            "radial-gradient(circle, rgba(30,58,138,0.07) 0%, rgba(3,105,161,0.03) 45%, transparent 70%)",
           right: "-120px",
           bottom: "-120px",
           filter: "blur(60px)",

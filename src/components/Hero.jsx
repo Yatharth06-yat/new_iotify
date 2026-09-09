@@ -84,7 +84,7 @@ export default function Hero({ onNavigate }) {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(circle, rgba(15,118,110,0.09) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(circle, rgba(30,58,138,0.09) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
           opacity: 0.6,
         }}
@@ -95,7 +95,7 @@ export default function Hero({ onNavigate }) {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse 70% 60% at 60% 40%, rgba(15,118,110,0.05) 0%, transparent 100%)",
+          background: "radial-gradient(ellipse 70% 60% at 60% 40%, rgba(30,58,138,0.05) 0%, transparent 100%)",
         }}
         aria-hidden="true"
       />
@@ -159,9 +159,9 @@ export default function Hero({ onNavigate }) {
               onClick={() => onNavigate("projects")}
               className="flex items-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-semibold transition-all duration-250 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               style={{
-                background: "#0F766E",
-                border: "1px solid #0D6860",
-                boxShadow: "0 2px 10px rgba(15,118,110,0.25)",
+                background: "#1e3a8a",
+                border: "1px solid #1e40af",
+                boxShadow: "0 2px 10px rgba(30,58,138,0.25)",
               }}
             >
               Explore Programs
@@ -189,8 +189,8 @@ export default function Hero({ onNavigate }) {
               className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-250 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               style={{
                 background: "transparent",
-                border: "1px solid rgba(15,118,110,0.30)",
-                color: "#0F766E",
+                border: "1px solid rgba(30,58,138,0.30)",
+                color: "#1e3a8a",
               }}
             >
               About IoTify Lab
@@ -239,7 +239,7 @@ export default function Hero({ onNavigate }) {
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: "radial-gradient(ellipse at 55% 55%, rgba(15,118,110,0.10) 0%, rgba(3,105,161,0.04) 45%, transparent 70%)",
+              background: "radial-gradient(ellipse at 55% 55%, rgba(30,58,138,0.10) 0%, rgba(3,105,161,0.04) 45%, transparent 70%)",
               filter: "blur(30px)",
             }}
             aria-hidden="true"
@@ -263,7 +263,7 @@ export default function Hero({ onNavigate }) {
                 left: dot.left,
                 right: dot.right,
                 animationDelay: dot.delay,
-                boxShadow: "0 0 8px rgba(15,118,110,0.20)",
+                boxShadow: "0 0 8px rgba(30,58,138,0.20)",
               }}
               aria-hidden="true"
             />
@@ -307,7 +307,7 @@ export default function Hero({ onNavigate }) {
             {/* Shadow beneath board */}
             <motion.div
               className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[50%] h-8 rounded-full"
-              style={{ background: "rgba(15,118,110,0.12)", filter: "blur(16px)" }}
+              style={{ background: "rgba(30,58,138,0.12)", filter: "blur(16px)" }}
               animate={{ scale: isHovered ? 1.2 : 1, opacity: isHovered ? 0.7 : 0.4 }}
               aria-hidden="true"
             />
