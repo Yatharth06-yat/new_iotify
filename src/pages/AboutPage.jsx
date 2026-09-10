@@ -447,7 +447,7 @@ function AboutSection({ onNavigate = () => { } }) {
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => onNavigate("Iot")}
-                className="px-6 py-3 rounded-xl bg-accent text-black font-semibold flex items-center gap-2 shadow-md text-sm transition-all bg-accent"
+                className="px-6 py-3 rounded-xl bg-accent text-white font-semibold flex items-center gap-2 shadow-md text-sm transition-all"
               >
                 Explore IoT
                 <ArrowRight size={15} />

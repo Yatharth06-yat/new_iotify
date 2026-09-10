@@ -5,30 +5,30 @@ const logo = "https://res.cloudinary.com/w1uqr8sy/image/upload/v1785951313/logo_
 
 const FOOTER_LINKS = {
   Navigation: [
-    { label: "Home",           page: "home"        },
-    { label: "About Us",       page: "about"       },
-    { label: "Gallery",        page: "gallery"     },
-    { label: "Book a Workshop",page: "book"        },
+    { label: "Home", page: "home" },
+    { label: "About Us", page: "about" },
+    { label: "Gallery", page: "gallery" },
+    { label: "Book a Workshop", page: "book" },
   ],
   Ecosystem: [
-    { label: "IoT Kits",        page: "iotkit"   },
-    { label: "Modules",         page: "projects" },
-    { label: "About IoT",       page: "Iot"      },
+    { label: "IoT Kits", page: "iotkit" },
+    { label: "Modules", page: "projects" },
+    { label: "About IoT", page: "Iot" },
     { label: "YouTube Channel", externalUrl: "https://youtube.com/@iotifylabmits?si=v3H9LDrcABtWdb4O" },
   ],
   Portal: [
-    { label: "Developer",   page: "developer"    },
-    { label: "Admin Login", page: "admin-login"  },
-    { label: "Contact Us",  page: "contact"      },
+    { label: "Developer", page: "developer" },
+    { label: "Admin Login", page: "admin-login" },
+    { label: "Contact Us", page: "contact" },
   ],
 };
 
 const SOCIAL_LINKS = [
-  { Icon: Youtube,  href: "https://youtube.com/@iotifylabmits?si=v3H9LDrcABtWdb4O", label: "YouTube" },
+  { Icon: Youtube, href: "https://youtube.com/@iotifylabmits?si=v3H9LDrcABtWdb4O", label: "YouTube" },
   { Icon: Linkedin, href: "#", label: "LinkedIn" },
-  { Icon: Twitter,  href: "#", label: "Twitter"  },
-  { Icon: Github,   href: "#", label: "GitHub"   },
-  { Icon: Mail,     href: "mailto:iotily@mits.ac.in", label: "Email" },
+  { Icon: Twitter, href: "#", label: "Twitter" },
+  { Icon: Github, href: "#", label: "GitHub" },
+  { Icon: Mail, href: "mailto:iotily@mits.ac.in", label: "Email" },
 ];
 
 export default function Footer({ onNavigate }) {
@@ -109,10 +109,7 @@ export default function Footer({ onNavigate }) {
               </div>
               <div className="flex items-center gap-2.5 text-xs text-gray-600">
                 <Mail size={12} className="text-accent flex-shrink-0" />
-                <a
-                  href="mailto:iotily@mits.ac.in"
-                  className="hover:text-accent transition-colors"
-                >
+                <a href="mailto:iotily@mits.ac.in" className="hover:text-accent transition-colors">
                   iotily@mits.ac.in
                 </a>
               </div>
@@ -179,23 +176,24 @@ export default function Footer({ onNavigate }) {
           ))}
         </div>
 
-        {/* Institutional stripe */}
+        {/* Institutional text strip */}
         <div
-          className="mb-6 p-4 rounded-xl"
-          style={{
-            background: "rgba(255,255,255,0.50)",
-            border: "1px solid rgba(17,24,39,0.08)",
-          }}
+          className="mb-5 py-3 px-4 rounded-xl text-center"
+          style={{ background: "rgba(255,255,255,0.45)", border: "1px solid rgba(17,24,39,0.07)" }}
         >
-          <div className="flex flex-wrap gap-x-6 gap-y-1 text-[11px] text-gray-500 font-medium">
-            <span>Madhav Institute of Technology &amp; Science</span>
-            <span>·</span>
-            <span>MITS–Deemed University, Gwalior</span>
-            <span>·</span>
-            <span>Centre for Internet of Things (CIoT)</span>
-            <span>·</span>
-            <span>MITS School Connect Programme</span>
-          </div>
+          <p className="font-semibold text-[12px] text-[#1e3a8a]" style={{ fontFamily: "serif" }}>
+            माधव प्रौद्योगिकी एवं विज्ञान संस्थान, ग्वालियर (म.प्र.), भारत
+          </p>
+          <p className="font-extrabold text-[12px] text-[#1e3a8a] tracking-wide uppercase">
+            Madhav Institute of Technology &amp; Science, Gwalior (M.P.), India
+          </p>
+          <p className="text-[10px] text-gray-500 font-medium mt-0.5">
+            <span className="font-semibold">Deemed University</span>
+            {" · "}
+            <span className="italic">Declared under Distinct Category by Ministry of Education, Govt. of India</span>
+            {" · "}
+            <span className="font-bold text-red-600 uppercase">NAAC A++</span>
+          </p>
         </div>
 
         {/* Bottom bar */}

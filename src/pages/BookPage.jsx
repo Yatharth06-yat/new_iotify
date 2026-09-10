@@ -680,7 +680,7 @@ export default function BookPage({ onNavigate }) {
 
   return (
     <div className="w-full text-gray-900 font-sans relative selection:bg-accent/20 selection:text-gray-900" style={{ background: "#FFF2E5" }}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 mt-20 sm:mt-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 mt-20 sm:mt-24">
 
         {/* ================================================== */}
         {/* PARTICIPATION PROCESS SNAKE ROADMAP SECTION        */}

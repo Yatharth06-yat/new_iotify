@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: "Gallery", page: "gallery" },
   { label: "Registration ", page: "book" },
   { label: "Developer", page: "developer" },
-  { label: "Admin", page: "admin-login" },
 ];
 
 export default function Navbar({ currentPage, onNavigate }) {
@@ -34,19 +33,14 @@ export default function Navbar({ currentPage, onNavigate }) {
       initial={{ y: -70, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#FFF2E5]/95 backdrop-blur-md border-b border-[rgba(17,24,39,0.09)] shadow-[0_2px_16px_rgba(17,24,39,0.08)] py-4"
-          : "bg-transparent py-5 sm:py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-[#FFF2E5]/95 backdrop-blur-md border-b border-[rgba(17,24,39,0.09)] shadow-[0_2px_16px_rgba(17,24,39,0.08)] py-4"
+        : "bg-transparent py-5 sm:py-6"
+        }`}
       role="navigation"
       aria-label="Main navigation"
     >
-      {/* Top institutional accent bar */}
-      <div
-        className="absolute inset-x-0 top-0 h-[3px]"
-        style={{ background: "linear-gradient(90deg, #1e3a8a, #0369A1, #1e3a8a)" }}
-      />
+
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 flex items-center justify-between">
 
@@ -79,11 +73,10 @@ export default function Navbar({ currentPage, onNavigate }) {
               <button
                 key={link.label}
                 onClick={() => handleNav(link.page)}
-                className={`relative px-4 py-2.5 rounded-xl text-sm sm:text-base font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1e3a8a] focus-visible:ring-offset-1 ${
-                  isActive
-                    ? "text-white"
-                    : "text-gray-700 hover:text-white hover:bg-[#1e3a8a]"
-                }`}
+                className={`relative px-4 py-2.5 rounded-xl text-sm sm:text-base font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1e3a8a] focus-visible:ring-offset-1 ${isActive
+                  ? "text-white"
+                  : "text-gray-700 hover:text-white hover:bg-[#1e3a8a]"
+                  }`}
                 aria-current={isActive ? "page" : undefined}
               >
                 {isActive && (
@@ -100,14 +93,14 @@ export default function Navbar({ currentPage, onNavigate }) {
                     />
                   </>
                 )}
-                <span className="relative z-10">{link.label}</span>
+                <span className="relative z-10 whitespace-nowrap">{link.label}</span>
               </button>
             );
           })}
         </nav>
 
-        {/* ── Desktop CTA ── */}
-        <div className="hidden lg:flex items-center gap-3">
+        {/* ── Desktop CTA + MITS Logo ── */}
+        <div className="hidden lg:flex items-center gap-4">
           <button
             onClick={() => handleNav("book")}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-white transition-all duration-250 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1e3a8a] focus-visible:ring-offset-2"
@@ -120,8 +113,17 @@ export default function Navbar({ currentPage, onNavigate }) {
             onMouseLeave={(e) => { e.currentTarget.style.background = "#1e3a8a"; e.currentTarget.style.boxShadow = "0 2px 8px rgba(30,58,138,0.22)"; e.currentTarget.style.transform = "translateY(0)"; }}
           >
             <GraduationCap size={17} />
-            <span>Register Now</span>
+            <span className="whitespace-nowrap">Register Now</span>
           </button>
+
+          {/* MITS Logo */}
+          <div className="flex items-center gap-2 pl-3 border-l border-gray-200">
+            <img
+              src="https://res.cloudinary.com/dwumernfk/image/upload/v1789034432/WhatsApp_Image_2026-09-10_at_14.29.00-removebg-preview_dwgnqm.png"
+              alt="MITS Deemed University"
+              className="h-16 sm:h-16 w-auto object-contain rounded-sm"
+            />
+          </div>
         </div>
 
         {/* ── Mobile hamburger ── */}
@@ -179,11 +181,18 @@ export default function Navbar({ currentPage, onNavigate }) {
             }}
           >
             {/* Brand header in drawer */}
-            <div className="px-4 py-3 border-b flex items-center gap-2" style={{ borderColor: "rgba(17,24,39,0.07)" }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a]" />
-              <span className="text-[11px] font-semibold text-gray-500 tracking-wider uppercase">
-                MITS School Connect Programme
-              </span>
+            <div className="px-4 py-3 border-b flex items-center justify-between" style={{ borderColor: "rgba(17,24,39,0.07)" }}>
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a]" />
+                <span className="text-[11px] font-semibold text-gray-500 tracking-wider uppercase">
+                  MITS School Connect Programme
+                </span>
+              </div>
+              <img
+                src="https://res.cloudinary.com/dwumernfk/image/upload/v1789032057/WhatsApp_Image_2026-09-10_at_14.29.00_hein6o.jpg"
+                alt="MITS Deemed University"
+                className="h-8 w-auto object-contain rounded-sm"
+              />
             </div>
 
             <div className="p-3 flex flex-col gap-1.5">
@@ -196,11 +205,10 @@ export default function Navbar({ currentPage, onNavigate }) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.035 }}
                     onClick={() => handleNav(link.page)}
-                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 focus-visible:outline-none ${
-                      isActive
-                        ? "text-white bg-[#1e3a8a] shadow-md border-l-4 border-[#1e40af]"
-                        : "text-gray-700 hover:text-white hover:bg-[#1e3a8a]"
-                    }`}
+                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 focus-visible:outline-none ${isActive
+                      ? "text-white bg-[#1e3a8a] shadow-md border-l-4 border-[#1e40af]"
+                      : "text-gray-700 hover:text-white hover:bg-[#1e3a8a]"
+                      }`}
                     aria-current={isActive ? "page" : undefined}
                   >
                     <span>{link.label}</span>
